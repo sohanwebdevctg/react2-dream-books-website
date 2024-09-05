@@ -2,17 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter,RouterProvider} from "react-router-dom";
 import Root from './components/Root/Root';
 import Home from './components/Home/Home';
 import Books from './components/Books/Books';
 import AboutUs from './components/AboutUs/AboutUs';
 import BookDetails from './components/BookDetails/BookDetails';
 import ErrorPage from './components/ErrorPage/ErrorPage';
-import LoadingPage from './components/LoadingPage/LoadingPage';
 
 const router = createBrowserRouter([
   {
@@ -37,10 +33,6 @@ const router = createBrowserRouter([
       {
         path : '/aboutUs',
         element : <AboutUs></AboutUs>
-      },
-      {
-        path : '/loading',
-        element : <LoadingPage></LoadingPage>
       }
     ]
   }
