@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";import { IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BoltIcon } from "@heroicons/react/24/solid";
@@ -7,17 +7,37 @@ import { BoltIcon } from "@heroicons/react/24/solid";
 const Navbar = () => {
 
    // toggle button state
-   const [show, setShow] = useState(false)
+   const [show, setShow] = useState(false);
+
+   //scroll functionality
+   const [scrollData, setScrollData] = useState(false);
+
+   useEffect(()=> {
+    
+    const handleScroll = () => {
+      if(window.scrollY > 120){
+        setScrollData(true)
+      }else{
+        setScrollData(false)
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+   },[])
 
   return (
     <div>
     {/* desktop section start */}
-      <div className="hidden sm:block  bg-gray-500 fixed z-10 top-0 left-0 right-0 w-full">
+      <div className={` ${scrollData ? 'fixed top-0 right-0 left-0 z-10 duration-300 bg-gray-600 shadow-lg' : 'sticky duration-300 z-0 bg-gray-500'} hidden sm:block w-full h-20`}>
         <div className="container mx-auto px-5">
-          <div className="flex justify-between h-16 xl:h-20 items-center px-8">
+          <div className="flex justify-between h-20 xl:h-20 items-center px-8">
             {/* logo start */}
             <Link to="/">
-            <p className='text-3xl text-blue-700 flex items-center sm:text-lg md:text-lg  lg:text-xl xl:text-2xl 2xl:text-3xl font-bold italic'><BoltIcon className="h-7 w-7 text-blue-700" /><i>DreamBooks</i></p>
+            <p className='text-3xl text-blue-800 flex items-center sm:text-lg md:text-lg  lg:text-xl xl:text-2xl 2xl:text-3xl font-bold italic'><BoltIcon className="h-7 w-7 text-blue-800" /><i>DreamBooks</i></p>
             </Link>
             {/* logo end */}
             {/* link start */}
@@ -33,13 +53,13 @@ const Navbar = () => {
       </div>
       {/* desktop section end */}
       {/* mobile section start */}
-      <div className='sm:hidden'>
+      <div className={`${scrollData ? 'fixed top-0 right-0 left-0 z-10 duration-500 bg-gray-600 shadow-lg' : 'sticky duration-500 z-0 bg-gray-500'} sm:hidden h-16`}>
         {/* title section start */}
-        <div className='bg-gray-500 h-16 flex items-center px-4 justify-between relative'>
+        <div className="h-16 flex items-center px-4 justify-between relative">
           {/* logo section start */}
           <div>
             <Link to="/">
-            <span className='text-base font-bold text-blue-700 flex items-center'><BoltIcon className="h-5 w-5 text-blue-700" /><i>DreamBooks</i></span>
+            <span className='text-base font-bold text-blue-800 flex items-center'><BoltIcon className="h-5 w-5 text-blue-800" /><i>DreamBooks</i></span>
             </Link>
           </div>
           {/* logo section end */}
@@ -53,7 +73,7 @@ const Navbar = () => {
         </div>
         {/* title section end */}
         {/* navItem section start */}
-        <div className={`absolute ${show ? 'right-0': 'right-[1000px]'} z-10 bg-gray-500 w-full duration-700 h-full bg-opacity-95`}>
+        <div className={`absolute ${show ? 'right-0': 'right-[1000px]'} z-30 bg-gray-500 w-full duration-700 h-screen bg-opacity-95`}>
             {/* link section start */}
             <ul className='md:flex gap-5 text-center space-y-5'>
               <li className='my-2'>

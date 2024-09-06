@@ -16,11 +16,15 @@ const Root = () => {
       {/* navbar section start */}
       <Navbar></Navbar>
       {/* navbar section end */}
+      {/* content section start */}
       <div className='bg-black'>
         {navigation.state === 'loading' ? <LoadingPage></LoadingPage> : ''}
         <Outlet></Outlet>
       </div>
+      {/* content section end */}
+      {/* footer section start */}
       <Footer></Footer>
+      {/* footer section end */}
     </div>
   );
 };
