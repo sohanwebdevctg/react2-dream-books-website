@@ -2,42 +2,42 @@
   {
   "id" : 1,
   "name" : "Guess",
-  "image" : "./newArriable/book1.jpeg",
+  "image" : "./newArrivals/book1.jpeg",
   "discount" : "$12.00",
   "price" : "$20.99"
   },
   {
   "id" : 2,
   "name" : "The Guardians",
-  "image" : "./newArriable/book2.jpeg",
+  "image" : "./newArrivals/book2.jpeg",
   "discount" : "$18.00",
   "price" : "$23.99"
   },
   {
   "id" : 3,
   "name" : "The Sleepover",
-  "image" : "./newArriable/book3.jpeg",
+  "image" : "./newArrivals/book3.jpeg",
   "discount" : "$15.34",
   "price" : "$18.50"
   },
   {
   "id" : 4,
   "name" : "The Little Prince",
-  "image" : "./newArriable/book4.jpeg",
+  "image" : "./newArrivals/book4.jpeg",
   "discount" : "$17.50",
   "price" : "$26.99"
   },
   {
   "id" : 5,
   "name" : "Kids Book",
-  "image" : "./newArriable/book5.jpeg",
+  "image" : "./newArrivals/book5.jpeg",
   "discount" : "$18.50",
   "price" : "$23.40"
   },
   {
   "id" : 6,
-  "name" : "Tippy the Kangaroo",
-  "image" : "./newArriable/book6.jpeg",
+  "name" : "The Kangaroo",
+  "image" : "./newArrivals/book6.jpeg",
   "discount" : "$19.00",
   "price" : "$25.90"
   }

@@ -6,6 +6,7 @@ import Banner from '../Banner/Banner';
 import Facilities from '../Facilities/Facilities';
 import FeaturedBooks from '../FeaturedBooks/FeaturedBooks';
 import OurApp from '../OurApp/OurApp';
+import NewArrivals from '../NewArrivals/NewArrivals';
 
 
 const Home = () => {
@@ -27,6 +28,9 @@ const Home = () => {
       {/* outApp section start */}
       <OurApp></OurApp>
       {/* outApp section end */}
+      {/* newArrivals section start */}
+      <NewArrivals></NewArrivals>
+      {/* newArrivals section end */}
     </div>
   );
 };
