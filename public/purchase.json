@@ -1,0 +1,20 @@
+[
+  {
+    "id" : 1,
+    "name" : "PDF",
+    "description" : "This is online PDF",
+    "price" : "79.99"
+  },
+  {
+    "id" : 2,
+    "name" : "E-BOOK",
+    "description" : "This is online E-BOOK",
+    "price" : "99.99"
+  },
+  {
+    "id" : 3,
+    "name" : "Print COPY",
+    "description" : "This is online Print COPY",
+    "price" : "59.99"
+  }
+]

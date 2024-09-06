@@ -7,6 +7,7 @@ import Facilities from '../Facilities/Facilities';
 import FeaturedBooks from '../FeaturedBooks/FeaturedBooks';
 import OurApp from '../OurApp/OurApp';
 import NewArrivals from '../NewArrivals/NewArrivals';
+import Purchase from '../Purchase/Purchase';
 
 
 const Home = () => {
@@ -31,6 +32,9 @@ const Home = () => {
       {/* newArrivals section start */}
       <NewArrivals></NewArrivals>
       {/* newArrivals section end */}
+      {/* purchase section start */}
+      <Purchase></Purchase>
+      {/* purchase section end */}
     </div>
   );
 };
