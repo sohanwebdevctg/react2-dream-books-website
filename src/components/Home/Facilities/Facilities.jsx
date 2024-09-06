@@ -4,7 +4,7 @@ import { FaLock,  FaHeadset } from "react-icons/fa";
 
 const Facilities = () => {
   return (
-    <div className="bg-blue-700 py-5">
+    <div className="bg-blue-700 py-5 my-3">
       <div className="container mx-auto px-5">
         {/* content section start */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-2 xl:gap-5">

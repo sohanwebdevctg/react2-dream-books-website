@@ -1,0 +1,72 @@
+[
+  {
+  "id" : 1,
+  "name" : "Hippos Play",
+  "image" : "./featuredbooks/book1.jpeg",
+  "discount" : "$13.56",
+  "price" : "$20.99"
+  },
+  {
+  "id" : 2,
+  "name" : "Poppy",
+  "image" : "./featuredbooks/book2.jpeg",
+  "discount" : "$18.99",
+  "price" : "$24.89"
+  },
+  {
+  "id" : 3,
+  "name" : "Jungle Book",
+  "image" : "./featuredbooks/book3.jpeg",
+  "discount" : "$22.50",
+  "price" : "$30.00"
+  },
+  {
+  "id" : 4,
+  "name" : "A Frog",
+  "image" : "./featuredbooks/book4.jpeg",
+  "discount" : "$12.00",
+  "price" : "$20.00"
+  },
+  {
+  "id" : 5,
+  "name" : "Moral Story Book",
+  "image" : "./featuredbooks/book5.jpeg",
+  "discount" : "$18.90",
+  "price" : "$22.45"
+  },
+  {
+  "id" : 6,
+  "name" : "The Lucky Puppy",
+  "image" : "./featuredbooks/book6.jpeg",
+  "discount" : "$15.00",
+  "price" : "$25.00"
+  },
+  {
+  "id" : 7,
+  "name" : "Monkey & Crocodile",
+  "image" : "./featuredbooks/book7.jpeg",
+  "discount" : "$22.00",
+  "price" : "$28.50"
+  },
+  {
+  "id" : 8,
+  "name" : "Beach Adventure",
+  "image" : "./featuredbooks/book8.jpeg",
+  "discount" : "$22.43",
+  "price" : "$28.90"
+  },
+  {
+  "id" : 9,
+  "name" : "The Gruffalo",
+  "image" : "./featuredbooks/book9.jpeg",
+  "discount" : "$14.00",
+  "price" : "$22.34"
+  },
+  {
+  "id" : 10,
+  "name" : "Moral Story Book",
+  "image" : "./featuredbooks/book10.jpeg",
+  "discount" : "$17.00",
+  "price" : "$26.00"
+  }
+  ]
