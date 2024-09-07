@@ -4,15 +4,15 @@ import { AiFillAndroid } from "react-icons/ai";
 
 const OurApp = () => {
   return (
-    <div className="bg-yellow-400 py-14">
+    <div className="bg-blue-600 py-14">
       <div className="container mx-auto px-5">
         {/* content section start */}
         <div className="text-center space-y-5">
           {/* title section start */}
-          <h3 className="text-blue-500 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold">Download Our App For All Platform</h3>
+          <h3 className="text-yellow-500 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold">Download Our App For All Platform</h3>
           {/* title section end */}
           {/* description section start */}
-          <p className="text-sm sm:text-sm md:text-[15px] lg:text-base xl:text-lg 2xl:text-xl text-gray-500 text-justify md:text-center">It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of <br className="hidden md:block"></br>Virtual Game, it has been achieving great heights so far as its popularity <br className="hidden md:block"></br>and technological advancement are concerned.</p>
+          <p className="text-sm sm:text-sm md:text-[15px] lg:text-base xl:text-lg 2xl:text-xl text-gray-300 text-justify md:text-center">It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of <br className="hidden md:block"></br>Virtual Game, it has been achieving great heights so far as its popularity <br className="hidden md:block"></br>and technological advancement are concerned.</p>
           {/* description section end */}
           {/* app section start */}
           <div className="flex justify-center gap-3 md:gap-4 xl:gap-5 2xl:gap-7">

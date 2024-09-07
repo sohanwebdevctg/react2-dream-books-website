@@ -1,6 +1,7 @@
 import OurReader from "../../OurReader/OurReader";
 import Banner from "../Banner/Banner";
 import Features from "../Features/Features";
+import Offer from "../Offer/Offer";
 
 
 const AboutUs = () => {
@@ -9,6 +10,9 @@ const AboutUs = () => {
       {/* banner section start */}
       <Banner></Banner>
       {/* banner section end */}
+      {/* offer section start */}
+      <Offer></Offer>
+      {/* offer section end */}
       {/* Features section start */}
       <Features></Features>
       {/* Features section end */}
