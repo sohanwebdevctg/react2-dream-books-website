@@ -1,0 +1,23 @@
+[
+  {
+    "id": "66dc3e62494e2f2903186bca",
+    "image": "./books/c1.jpg",
+    "name": "Breakthrough Thinking",
+    "price": "$25.00",
+    "details": "A comprehensive guide to innovative problem-solving techniques. Perfect for professionals seeking to enhance their creative thinking skills."
+  },
+  {
+    "id": "66dc3e624ca22db656c7ee74",
+    "image": "./books/c2.jpg",
+    "name": "Montages Toujours!",
+    "price": "$29.00",
+    "details": "A stunning collection of montages featuring contemporary art and design. Ideal for art enthusiasts and collectors."
+  },
+  {
+    "id": "66dc3e62152f81a8672ade30",
+    "image": "./books/c3.jpg",
+    "name": "Broken cassette",
+    "price": "$23.00",
+    "details": "A nostalgic piece featuring classic cassette recordings. Perfect for vintage audio collectors and retro music lovers."
+  }
+]
