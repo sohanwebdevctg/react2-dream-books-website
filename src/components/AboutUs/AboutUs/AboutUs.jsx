@@ -1,10 +1,18 @@
-import OurReader from "../../OurReader/OurReader";
+
+import { useNavigation } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import Features from "../Features/Features";
 import Offer from "../Offer/Offer";
+import OurReader from "../OurReader/OurReader";
+import LoadingPage from "../../LoadingPage/LoadingPage";
+
 
 
 const AboutUs = () => {
+
+  const navigation = useNavigation()
+  {navigation.state === 'loading' ? <LoadingPage></LoadingPage> : ''}
+
   return (
     <div>
       {/* banner section start */}
