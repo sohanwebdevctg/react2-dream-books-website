@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter,RouterProvider} from "react-router-dom";
 import Root from './components/Root/Root';
-import AboutUs from './components/AboutUs/AboutUs';
 // import BookDetails from './components/BookDetails/BookDetails';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home/Home';
 import Books from './components/Books/Books/Books';
+import AboutUs from './components/AboutUs/AboutUs/AboutUs';
 
 const router = createBrowserRouter([
   {

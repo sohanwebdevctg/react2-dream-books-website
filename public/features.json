@@ -1,0 +1,22 @@
+[
+  {
+    "id" : 1,
+    "percent" : 2534,
+    "type" : "Happy Clients"
+  },
+  {
+    "id" : 2,
+    "percent" : 6784,
+    "type" : "Total Projects"
+  },
+  {
+    "id" : 3,
+    "percent" : 1059,
+    "type" : "Cups Coffee"
+  },
+  {
+    "id" : 4,
+    "percent" : 12239,
+    "type" : "Tickets Submitted"
+  }
+]

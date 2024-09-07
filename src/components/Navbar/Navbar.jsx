@@ -44,8 +44,8 @@ const Navbar = () => {
             <ul className="sm:flex gap-10">
               <li><NavLink to="/" className={({ isActive}) => isActive ? "text-yellow-400 sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold" : "text-white sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl" }>Home</NavLink></li>
               <li><NavLink to="/books" className={({ isActive}) => isActive ? "text-yellow-400 sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold" : "text-white sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl" }>Books</NavLink></li>
-              {/* <li><NavLink to="/services" className={({ isActive}) => isActive ? "text-gray-400 sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold" : "text-black sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl" }>Services</NavLink></li>
-              <li><NavLink to="/contact" className={({ isActive}) => isActive ? "text-gray-400 sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold" : "text-black sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl" }>Contact</NavLink></li> */}
+              <li><NavLink to="/aboutUs" className={({ isActive}) => isActive ? "text-gray-400 sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold" : "text-black sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl" }>AboutUs</NavLink></li>
+              {/* <li><NavLink to="/contact" className={({ isActive}) => isActive ? "text-gray-400 sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold" : "text-black sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl" }>Contact</NavLink></li> */}
             </ul>
             {/* link end */}
           </div>
@@ -82,10 +82,10 @@ const Navbar = () => {
               <li className='my-2'>
                 <NavLink to="/books" onClick={() => {setShow(false)}} className={({ isActive}) => isActive ? "text-yellow-400 text-base font-semibold" : "text-white text-base" }>Books</NavLink>
               </li>
-              {/* <li className='my-2'>
+              <li className='my-2'>
                 <NavLink to="/services" onClick={() => {setShow(false)}} className={({ isActive}) => isActive ? "text-gray-400 text-base font-semibold" : "text-black text-base" }>Services</NavLink>
               </li>
-              <li className='my-2'>
+              {/* <li className='my-2'>
                 <NavLink to="/contact" onClick={() => {setShow(false)}} className={({ isActive}) => isActive ? "text-gray-400 text-base font-semibold" : "text-black text-base" }>Contact</NavLink>
               </li> */}
             </ul>
