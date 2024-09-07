@@ -1,0 +1,23 @@
+[
+  {
+  "id" : 1,
+  "name" : "John Smith",
+  "image" : "./aboutUs/client1.jpeg",
+  "details" : "This book is a masterclass in tension and suspense. The author's ability to weave complex characters into a gripping narrative kept me on the edge of my seat. Absolutely riveting",
+  "work" : "CEO at Google"
+  },
+  {
+  "id" : 2,
+  "name" : "Kane Harry",
+  "image" : "./aboutUs/client2.jpeg",
+    "details" : "I found the book's exploration of moral ambiguity both refreshing and unsettling. The characters’ choices are provocative and thought-provoking, leading to an ending that left me questioning everything I believed",
+  "work" : "CEO at Facebook"
+  },
+  {
+  "id" : 3,
+  "name" : "Shawn",
+  "image" : "./aboutUs/client3.jpeg",
+    "details" : "The vivid imagery and intricate world-building in this novel are remarkable. Each page felt like stepping into a new realm, with the protagonist’s journey resonating deeply and leaving a lasting impact.",
+  "work" : "CEO at X"
+  }
+  ]
