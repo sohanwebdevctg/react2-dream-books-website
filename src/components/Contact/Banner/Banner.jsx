@@ -1,3 +1,4 @@
+import './Banner.css'
 import contactBanner from '../../../../public/contact/contactBanner.png'
 
 const Banner = () => {
@@ -23,9 +24,9 @@ const Banner = () => {
           </div>
           {/* description section end */}
           {/* lottie section start */}
-          <div className="overflow-hidden sm:flex-1 mt-2 sm:mt-0 py-3">
+          <div className=" sm:flex-1 mt-4 sm:mt-0">
             {/* image section start */}
-            <img src={contactBanner} className="w-48 h-52 sm:w-48 sm:h-52 md:w-56 md:h-60 lg:w-72 lg:h-72 xl:h-[70%] xl:w-[52%] 2xl:h-[70%] 2xl:w-[45%] mx-auto"></img>
+            <img src={contactBanner} className="w-48 h-52 sm:w-48 sm:h-52 md:w-56 md:h-60 lg:w-72 lg:h-72 xl:h-[70%] xl:w-[52%] 2xl:h-[70%] 2xl:w-[48%] mx-auto bg-blue-700 p-5 rounded-tl-3xl rounded-br-3xl contactBanner"></img>
             {/* image section end */}
           </div>
           {/* lottie section end */}

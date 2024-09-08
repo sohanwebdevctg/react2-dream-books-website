@@ -8,6 +8,7 @@ import FeaturedBooks from "../FeaturedBooks/FeaturedBooks";
 import OurApp from "../OurApp/OurApp";
 import NewArrivals from "../NewArrivals/NewArrivals";
 import Purchase from "../Purchase/Purchase";
+import FavoriteBooks from "../FavoriteBooks/FavoriteBooks";
 
 const Home = () => {
   const navigation = useNavigation();
@@ -26,6 +27,9 @@ const Home = () => {
       {/* featuredBooks section start */}
       <FeaturedBooks></FeaturedBooks>
       {/* featuredBooks section end */}
+      {/* favoriteBooks section start */}
+      <FavoriteBooks></FavoriteBooks>
+      {/* favoriteBooks section end */}
       {/* newArrivals section start */}
       <NewArrivals></NewArrivals>
       {/* newArrivals section end */}

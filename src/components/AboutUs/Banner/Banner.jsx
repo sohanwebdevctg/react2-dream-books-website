@@ -1,3 +1,4 @@
+import './Banner.css'
 import aboutBooks from '../../../../public/aboutUs/aboutBanner.png'
 
 const Banner = () => {
@@ -23,9 +24,9 @@ const Banner = () => {
           </div>
           {/* description section end */}
           {/* lottie section start */}
-          <div className="overflow-hidden sm:flex-1 mt-2 sm:mt-0 py-3">
+          <div className="sm:flex-1 mt-4 sm:mt-0 py-3">
             {/* image section start */}
-            <img src={aboutBooks} className="w-48 h-52 sm:w-48 sm:h-52 md:w-56 md:h-60 lg:w-72 lg:h-72 xl:h-[70%] xl:w-[48%] 2xl:h-[70%] 2xl:w-[45%] mx-auto"></img>
+            <img src={aboutBooks} className="w-48 h-52 sm:w-48 sm:h-52 md:w-56 md:h-60 lg:w-72 lg:h-72 xl:h-[70%] xl:w-[48%] 2xl:h-[70%] 2xl:w-[45%] mx-auto aboutUsBanner"></img>
             {/* image section end */}
           </div>
           {/* lottie section end */}
