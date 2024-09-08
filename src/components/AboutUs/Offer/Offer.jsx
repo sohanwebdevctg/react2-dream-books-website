@@ -1,16 +1,25 @@
+import { useEffect } from 'react';
 import img1 from '../../../../public/aboutUs/img1.jpg'
 import img2 from '../../../../public/aboutUs/img2.png'
 import img3 from '../../../../public/aboutUs/img3.png'
 import img4 from '../../../../public/aboutUs/img4.jpeg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Offer = () => {
+
+    //AOS
+    useEffect(() => {
+      AOS.init();
+    },[])
+
   return (
     <div className="my-10">
       <div className="container mx-auto px-5">
         {/* content section start */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 overflow-hidden">
           {/* item1 section start */}
-          <div className='relative'>
+          <div className='relative' data-aos="zoom-in" data-aos-duration="1500">
             <img src={img1} className='h-40 sm:h-56 md:h-56 lg:h-64 xl:h-96 2xl:h-[400px] w-full'></img>
             <div className='bg-black bg-opacity-25 absolute top-2 right-2 left-2 bottom-2 flex items-end'>
               <ul className='p-3 text-left'>
@@ -22,7 +31,7 @@ const Offer = () => {
           {/* item1 section end */}
           {/* item2 section start */}
           <div>
-            <div className='relative'>
+            <div className='relative' data-aos="zoom-in" data-aos-duration="1500">
             <img src={img2} className='h-40 sm:h-28 md:h-28 lg:h-32 xl:h-48 2xl:h-[200px] w-full pb-2'></img>
             <div className='bg-black bg-opacity-25 absolute top-2 right-2 left-2 bottom-4 flex justify-center items-center'>
               <ul>
@@ -32,7 +41,7 @@ const Offer = () => {
               </ul>
             </div>
             </div>
-            <div className='relative'>
+            <div className='relative' data-aos="zoom-in" data-aos-duration="1500">
             <img src={img3} className='h-40 sm:h-28 md:h-28 lg:h-32 xl:h-48 2xl:h-[200px] w-full pt-2'></img>
             <div className='bg-black bg-opacity-25 absolute top-4 right-2 left-2 bottom-2 flex justify-center items-center'>
             <ul>
@@ -45,7 +54,7 @@ const Offer = () => {
           </div>
           {/* item2 section end */}
           {/* item3 section start */}
-          <div className='relative'>
+          <div className='relative' data-aos="zoom-in" data-aos-duration="1500">
             <img src={img4} className='h-40 sm:h-56 md:h-56 lg:h-64 xl:h-96 2xl:h-[400px] w-full'></img>
             <div className='bg-black bg-opacity-25 absolute top-2 right-2 left-2 bottom-2 flex justify-end items-end'>
             <ul className='p-3 text-right'>

@@ -2,8 +2,18 @@ import { BsFillTelephoneFill } from 'react-icons/bs';
 import { CgMail } from 'react-icons/cg';
 import { FaFacebookSquare, FaFax, FaInstagram, FaLinkedin, FaTwitterSquare, FaYoutube } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const ContactForm = () => {
+
+  
+  //AOS
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
 <div className="px-5 sm:px-4 md:px-4 py-10">
       {/* content section start */}
@@ -41,7 +51,7 @@ const ContactForm = () => {
           </div>
           {/* left item section end */}
           {/* right item section start */}
-          <div className="flex-1 mt-10 sm:mt-0">
+          <div className="flex-1 mt-10 sm:mt-0" data-aos="zoom-in" data-aos-duration="1500">
             <form className="bg-gray-600 bg-opacity-25 shadow-lg p-4 xl:p-8 space-y-3 sm:space-y-3 xl:space-y-5 rounded-md">
               <div>
                 <h1 className="text-lg sm:text-lg md:text-xl lg:text-[22px] xl:text-2xl 2xl:text-3xl font-bold text-blue-700">Send Message</h1>

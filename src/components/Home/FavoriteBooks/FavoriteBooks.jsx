@@ -1,11 +1,19 @@
+import { useEffect } from "react";
 import img1 from "../../../../public/favoriteBooks/img1.jpg";
 import img2 from "../../../../public/favoriteBooks/img2.jpg";
 import img3 from "../../../../public/favoriteBooks/img3.jpg";
 import img4 from "../../../../public/favoriteBooks/img4.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-// import aboutBooks from '../../../../public/aboutUs/aboutBanner.png'
 
 const FavoriteBooks = () => {
+  
+  //AOS
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
     <div className="container mx-auto px-5 py-5">
       {/* home section start */}
@@ -13,10 +21,10 @@ const FavoriteBooks = () => {
         {/* books section start */}
         <div className="gap-5 sm:flex-1 mt-2 sm:mt-0 py-3">
           <ul className='grid grid-cols-2 gap-3 sm:gap-2 md:gap-3 lg:gap-5 xl:gap-7 2xl:gap-8'>
-            <li><img src={img1} className="w-32 h-28 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:h-52 xl:w-64 2xl:w-80 2xl:h-60 mx-auto"></img></li>
-            <li><img src={img2} className="w-32 h-28 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:h-52 xl:w-64 2xl:w-80 2xl:h-60"></img></li>
-            <li><img src={img4} className="w-32 h-28 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:h-52 xl:w-64 2xl:w-80 2xl:h-60 mx-auto"></img></li>
-            <li><img src={img1} className="w-32 h-28 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:h-52 xl:w-64 2xl:w-80 2xl:h-60"></img></li>
+            <li data-aos="fade-right" data-aos-duration="2000"><img src={img1} className="w-32 h-28 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:h-52 xl:w-64 2xl:w-80 2xl:h-60 mx-auto"></img></li>
+            <li data-aos="fade-right" data-aos-duration="2000"><img src={img2} className="w-32 h-28 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:h-52 xl:w-64 2xl:w-80 2xl:h-60"></img></li>
+            <li data-aos="fade-right" data-aos-duration="2000"><img src={img3} className="w-32 h-28 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:h-52 xl:w-64 2xl:w-80 2xl:h-60 mx-auto"></img></li>
+            <li data-aos="fade-right" data-aos-duration="2000"><img src={img4} className="w-32 h-28 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:h-52 xl:w-64 2xl:w-80 2xl:h-60"></img></li>
           </ul>
         </div>
         {/* books section end */}

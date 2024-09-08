@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const OurReader = () => {
@@ -14,6 +16,12 @@ const OurReader = () => {
         .then((data) => setReaders(data))
       },[])
 
+      
+  //AOS
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
     <div className="py-8">
       <div className="container mx-auto px-5">
@@ -27,7 +35,7 @@ const OurReader = () => {
         {/* books section start */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2  mt-10">
         {
-            readers.map((reader) => <div key={reader.id} className="border-[1px] border-solid border-gray-500 hover:border-blue-500 duration-300 mx-auto p-4 sm:p-3 md:p-3 lg:p-5 xl:p-7 2xl:p-8 w-full hover:bg-white hover:bg-opacity-10 space-y-4">
+            readers.map((reader) => <div data-aos="flip-left" data-aos-duration="1200" key={reader.id} className="border-[1px] border-solid border-gray-500 hover:border-blue-500 duration-300 mx-auto p-4 sm:p-3 md:p-3 lg:p-5 xl:p-7 2xl:p-8 w-full hover:bg-white hover:bg-opacity-10 space-y-4">
               {/* image section start */}
               <div>
                 <img src={reader.image} className="w-16 h-16 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-20 xl:h-20 2xl:w-24 2xl:h-24 rounded-full mx-auto"></img>

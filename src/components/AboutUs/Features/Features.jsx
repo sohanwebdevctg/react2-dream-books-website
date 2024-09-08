@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import CountUp from 'react-countup';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 const Features = () => {
@@ -13,6 +16,12 @@ const Features = () => {
           .then((res) => res.json())
           .then((data) => setFeatures(data))
         },[])
+
+        
+  //AOS
+  useEffect(() => {
+    AOS.init();
+  },[])
 
 
   return (
@@ -32,7 +41,7 @@ const Features = () => {
         {/* Features section start */}
         <div className='grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-3 xl:gap-5 my-8 sm:my-9 md:my-10 lg:my-12 xl:my-14 2xl:my-14'>
           {
-            features.map((feature) => <div key={feature.id} className="bg-blue-600 text-center py-4 sm:py-4 md:py-5 lg:py-5 xl:py-6 2xl:py-8 rounded-md space-y-2">
+            features.map((feature) => <div data-aos="zoom-in" data-aos-duration="1200" key={feature.id} className="bg-blue-600 text-center py-4 sm:py-4 md:py-5 lg:py-5 xl:py-6 2xl:py-8 rounded-md space-y-2">
               <h3 className="text-yellow-500 text-2xl sm:text-xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl"><CountUp end={feature.percent} duration={20}/></h3>
               <p className="text-[10px] sm:text-[8px] md:text-[10px] lg:text-sm xl:text-base 2xl:text-xl text-gray-300">{feature.type}</p>
             </div>)

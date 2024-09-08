@@ -17,7 +17,7 @@ const Root = () => {
       <Navbar></Navbar>
       {/* navbar section end */}
       {/* content section start */}
-      <div className='bg-black'>
+      <div className='bg-[#17181B]'>
         {navigation.state === 'loading' ? <LoadingPage></LoadingPage> : ''}
         <Outlet></Outlet>
       </div>

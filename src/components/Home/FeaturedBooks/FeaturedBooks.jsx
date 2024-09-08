@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const FeaturedBooks = () => {
@@ -11,6 +13,11 @@ const FeaturedBooks = () => {
     fetch('featuredbooks.json')
     .then((res) => res.json())
     .then((data) => setBooks(data))
+  },[])
+
+  //AOS
+  useEffect(() => {
+    AOS.init();
   },[])
 
   return (
@@ -26,7 +33,7 @@ const FeaturedBooks = () => {
         {/* books section start */}
         <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-5 gap-2 sm:gap-3 md:gap-2 lg:gap-4 xl:gap-4 2xl:gap-5 mt-10">
           {
-            books.map((book) => <div key={book.id} className="border-[1px] border-solid border-gray-500 hover:border-blue-500 duration-300 mx-auto p-2 sm:p-2 md:p-2 lg:p-3 xl:p-4 2xl:p-5 hover:bg-white hover:bg-opacity-10">
+            books.map((book) => <div data-aos="zoom-in" data-aos-duration="1200" key={book.id} className="border-[1px] border-solid border-gray-500 hover:border-blue-500 duration-300 mx-auto p-2 sm:p-2 md:p-2 lg:p-3 xl:p-4 2xl:p-5 hover:bg-white hover:bg-opacity-10">
               {/* image section start */}
               <img src={book.image} className="w-36 h-28 sm:w-32 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-36 xl:w-60 xl:h-60 2xl:w-64 2xl:h-64"></img>
               {/* image section end */}

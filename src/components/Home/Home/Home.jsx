@@ -36,7 +36,6 @@ const Home = () => {
       {/* outApp section start */}
       <OurApp></OurApp>
       {/* outApp section end */}
-
       {/* purchase section start */}
       <Purchase></Purchase>
       {/* purchase section end */}

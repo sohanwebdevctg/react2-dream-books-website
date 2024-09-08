@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Purchase = () => {
@@ -12,6 +14,11 @@ const Purchase = () => {
       .then((res) => res.json())
       .then((data) => setBooks(data))
     },[])
+
+          //AOS
+  useEffect(() => {
+    AOS.init();
+  },[])
 
   return (
     <div className="py-10">
@@ -30,7 +37,7 @@ const Purchase = () => {
         {/* books section start */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-3 md:gap-4 lg:gap-5 mt-10">
           {
-            books.map((book) => <div key={book.id} className="border-[1px] border-solid border-gray-500 text-center hover:bg-blue-600 hover:bg-opacity-5 hover:duration-300">
+            books.map((book) => <div key={book.id} className="border-[1px] border-solid border-gray-500 text-center hover:bg-blue-600 hover:bg-opacity-5 hover:duration-300" data-aos="flip-up" data-aos-duration="1000">
               {/* name section start */}
             <div className="bg-white bg-opacity-10 border-b-[1px] border-solid border-gray-500">
               {/* name section start */}

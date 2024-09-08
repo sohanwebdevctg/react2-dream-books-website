@@ -1,13 +1,25 @@
 import Lottie from "lottie-react";
 import Reading from "../../../assets/reading.json";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Banner = () => {
+
+  
+  //AOS
+  useEffect(() => {
+    AOS.init();
+  },[])
+
+
   return (
-    <div className="container mx-auto px-5 py-5">
+    <div className="h-full sm:h-72 md:h-80 lg:h-96 xl:h-[520px] 2xl:h-[550px] flex items-center">
+      <div className="container mx-auto px-5 py-5">
       {/* home section start */}
-      <div className="sm:flex sm:justify-between sm:items-center gap-4">
+      <div className="sm:flex sm:justify-between sm:items-center gap-4 overflow-hidden">
         {/* description section start */}
-        <div className="sm:flex-1">
+        <div className="sm:flex-1" data-aos="fade-right" data-aos-duration="1000">
           <span className="text-blue-800 bg-gray-500 font-medium md:font-bold md:px-3 px-2 py-1 rounded-2xl text-[6px] sm:text-[7px] md:text-[8px] lg:text-[9px] xl:text-xs 2xl:text-sm">
             ON SALE
           </span>
@@ -27,13 +39,15 @@ const Banner = () => {
         </div>
         {/* description section end */}
         {/* lottie section start */}
-        <div className="overflow-hidden sm:flex-1 mt-2 sm:mt-0 py-3">
-          <Lottie animationData={Reading} loop={true} />
+        <div className="overflow-hidden sm:flex-1 mt-2 sm:mt-0 py-3" data-aos="fade-left" data-aos-duration="1000">
+          <Lottie animationData={Reading} loop={true} className="w-60 sm:w-60 md:w-72 lg:w-80 xl:w-96 2xl:w-[430px] mx-auto" />
         </div>
         {/* lottie section end */}
       </div>
       {/* home section end */}
     </div>
+    </div>
+    
   );
 };
 

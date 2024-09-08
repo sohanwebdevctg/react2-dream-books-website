@@ -4,7 +4,7 @@ import './LoadingPage.css';
 
 const LoadingPage = () => {
   return (
-    <div className='flex justify-center items-center h-screen bg-black'>
+    <div className='flex justify-center items-center h-screen bg-[#17181B]'>
       {/* loading section start */}
       <div className='text-center flex items-center'>
         <p className='text-slate-100 text-6xl md:text-9xl'>L</p>

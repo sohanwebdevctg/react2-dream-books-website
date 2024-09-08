@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaStar,FaStarHalfAlt } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const NewArrivals = () => {
@@ -14,6 +16,11 @@ const NewArrivals = () => {
       .then((data) => setBooks(data))
     },[])
 
+      //AOS
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
     <div className="py-10">
       <div className="container mx-auto px-5">
@@ -27,7 +34,7 @@ const NewArrivals = () => {
         {/* books section start */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2  mt-10">
         {
-            books.map((book) => <div key={book.id} className="border-[1px] border-solid border-gray-500 hover:border-blue-500 duration-300 mx-auto p-2 sm:p-2 md:p-2 lg:p-3 xl:p-4 2xl:p-5 sm:flex  items-center gap-2 lg:gap-3 xl:gap-3 2xl:gap-3 w-full hover:bg-white hover:bg-opacity-10">
+            books.map((book) => <div data-aos="flip-left" data-aos-duration="1200" key={book.id} className="border-[1px] border-solid border-gray-500 hover:border-blue-500 duration-300 mx-auto p-2 sm:p-2 md:p-2 lg:p-3 xl:p-4 2xl:p-5 sm:flex  items-center gap-2 lg:gap-3 xl:gap-3 2xl:gap-3 w-full hover:bg-white hover:bg-opacity-10">
               {/* image section start */}
               <div className="sm:flex-1">
                 <img src={book.image} className="w-full h-28 sm:w-24 sm:h-28 md:w-32 md:h-32 lg:w-44 lg:h-36 xl:w-56 xl:h-48 2xl:w-64 2xl:h-64"></img>

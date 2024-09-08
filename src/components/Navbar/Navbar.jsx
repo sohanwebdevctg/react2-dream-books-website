@@ -32,20 +32,20 @@ const Navbar = () => {
   return (
     <div>
     {/* desktop section start */}
-      <div className={` ${scrollData ? 'fixed top-0 right-0 left-0 z-10 duration-300 bg-gray-600 shadow-lg' : 'sticky duration-300 z-0 bg-gray-500'} hidden sm:block w-full h-20`}>
+      <div className={` ${scrollData ? 'fixed top-0 right-0 left-0 z-10' : 'sticky top-0 right-0 left-0 z-0 '} hidden sm:block w-full h-16 lg:h-20 2xl:h-24 bg-[#17181B] duration-500 shadow-sm shadow-blue-600`}>
         <div className="container mx-auto px-5">
-          <div className="flex justify-between h-20 xl:h-20 items-center px-8">
+          <div className="flex justify-between h-16 lg:h-20 2xl:h-24 items-center px-4">
             {/* logo start */}
             <Link to="/">
-            <p className='text-3xl text-blue-800 flex items-center sm:text-lg md:text-lg  lg:text-xl xl:text-2xl 2xl:text-3xl font-bold italic'><BoltIcon className="h-7 w-7 text-blue-800" /><i>DreamBooks</i></p>
+            <p className='text-3xl text-blue-800 flex items-center sm:text-[13px] md:text-[15px] lg:text-xl xl:text-2xl 2xl:text-3xl font-bold italic'><BoltIcon className="sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 xl:h-7 xl:w-7 text-blue-800" /><i>DreamBooks</i></p>
             </Link>
             {/* logo end */}
             {/* link start */}
-            <ul className="sm:flex gap-10">
-              <li><NavLink to="/" className={({ isActive}) => isActive ? "text-yellow-400 sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold" : "text-white sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl" }>Home</NavLink></li>
-              <li><NavLink to="/books" className={({ isActive}) => isActive ? "text-yellow-400 sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold" : "text-white sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl" }>Books</NavLink></li>
-              <li><NavLink to="/aboutUs" className={({ isActive}) => isActive ? "text-yellow-400 sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold" : "text-white sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl" }>AboutUs</NavLink></li>
-              <li><NavLink to="/contact" className={({ isActive}) => isActive ? "text-yellow-400 sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-semibold" : "text-white sm:text-sm md:text-sm lg:text-base xl:text-lg 2xl:text-xl" }>Contact</NavLink></li>
+            <ul className="sm:flex sm:gap-5 md:gap-5 lg:gap-8 xl:gap-10 2xl:gap-11">
+              <li><NavLink to="/" className={({ isActive}) => isActive ? "text-yellow-400 sm:text-[11px] md:text-[13px] lg:text-base xl:text-[17px] 2xl:text-xl font-semibold" : "text-white sm:text-[11px] md:text-[13px] lg:text-base xl:text-[17px] 2xl:text-xl" }>Home</NavLink></li>
+              <li><NavLink to="/books" className={({ isActive}) => isActive ? "text-yellow-400 sm:text-[11px] md:text-[13px] lg:text-base xl:text-[17px] 2xl:text-xl font-semibold" : "text-white sm:text-[11px] md:text-[13px] lg:text-base xl:text-[17px] 2xl:text-xl" }>Books</NavLink></li>
+              <li><NavLink to="/aboutUs" className={({ isActive}) => isActive ? "text-yellow-400 sm:text-[11px] md:text-[13px] lg:text-base xl:text-[17px] 2xl:text-xl font-semibold" : "text-white sm:text-[11px] md:text-[13px] lg:text-base xl:text-[17px] 2xl:text-xl" }>AboutUs</NavLink></li>
+              <li><NavLink to="/contact" className={({ isActive}) => isActive ? "text-yellow-400 sm:text-[11px] md:text-[13px] lg:text-base xl:text-[17px] 2xl:text-xl font-semibold" : "text-white sm:text-[11px] md:text-[13px] lg:text-base xl:text-[17px] 2xl:text-xl" }>Contact</NavLink></li>
             </ul>
             {/* link end */}
           </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
       </div>
       {/* desktop section end */}
       {/* mobile section start */}
-      <div className={`${scrollData ? 'fixed top-0 right-0 left-0 z-10 duration-500 bg-gray-600 shadow-lg' : 'sticky duration-500 z-0 bg-gray-500'} sm:hidden h-16`}>
+      <div className={`${scrollData ? 'fixed top-0 right-0 left-0 z-10' : 'sticky z-10'} sm:hidden h-16 bg-[#17181B] duration-500 shadow-sm shadow-blue-600`}>
         {/* title section start */}
         <div className="h-16 flex items-center px-4 justify-between relative">
           {/* logo section start */}
@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>
         {/* title section end */}
         {/* navItem section start */}
-        <div className={`absolute ${show ? 'right-0': 'right-[1000px]'} z-30 bg-gray-500 w-full duration-700 h-screen bg-opacity-95`}>
+        <div className={`absolute ${show ? 'right-0 z-50': 'right-[1000px]'} z-50 bg-[#17181B] w-full duration-700 h-screen bg-opacity-95`}>
             {/* link section start */}
             <ul className='md:flex gap-5 text-center space-y-5'>
               <li className='my-2'>
