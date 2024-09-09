@@ -1,28 +1,49 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
-import { Link, useNavigation } from 'react-router-dom';
-import LoadingPage from '../../LoadingPage/LoadingPage';
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const Book = ({book}) => {
-  const navigation = useNavigation();
-  {navigation.state === 'loading' ? <LoadingPage></LoadingPage> : ''}
-  
-  const {isbn13,image,subtitle,price,title} = book;
+const Book = ({ book }) => {
+  const { id, image, name, rating } = book;
 
   return (
-    <Link to={`/book/${isbn13}`}>
-      <div className='overflow-hidden relative hover:shadow-lg hover:shadow-blue-500/50 transform hover:-translate-y-2 ease-in duration-500'>
-      <div className=''>
-        <img className='object-cover md:w-96 md:h-64 w-auto h-auto' src={image}></img>
-      </div>
-      <div className='bg-gray-600 hover:opacity-80 opacity-0 absolute top-0 left-0 bottom-0 right-0 duration-500 p-2 md:p-6 flex flex-col'>
-        <h1 className='text-slate-100 md:text-xl'>Title : {title ? title : 'No-Data'}</h1>
-        {/* // eslint-disable-next-line react/prop-types */}
-        <p className='text-slate-100 md:text-lg md:py-2'>SubTitle : {subtitle ? subtitle?.slice(0,60) : 'No-Data'}...</p>
-        <p className='text-slate-100 md:text-sm py-2 mt-auto'>Price : {price ? price : 'No-Data'}</p>
-      </div>
-    </div>
-    </Link>
+    <>
+      {/* <Link to={`/singleBook/${id}`}> */}
+      <Link to="#">
+        <div className="overflow-hidden h-40 w-full sm:h-48 md:h-44 lg:h-48 xl:h-64 2xl:h-72 relative hover:shadow-lg hover:shadow-blue-600/100 transform hover:-translate-y-2 easy-in duration-500">
+          {/* image section start */}
+          <div className="w-full h-full">
+            <img src={image} className="w-full h-full object-cover"></img>
+          </div>
+          {/* image section end */}
+          {/* details section start */}
+          <div className="absolute top-0 right-0 left-0 bottom-0 p-3 md:p-4 lg:p-4 2xl:p-6 duration-500 ease-in bg-gray-500 opacity-0 hover:opacity-90 flex flex-col justify-between">
+            <h1 className="text-[15px] sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-white">
+              {name}
+            </h1>
+            {/* ratting section start */}
+            <ul className="flex items-center gap-1">
+              <li className="text-blue-600">
+                <FaStar className="text-sm sm:text-lg md:text-lg lg:text-base xl:text-lg 2xl:text-2xl"></FaStar>
+              </li>
+              <li className="text-blue-600">
+                <FaStar className="text-sm sm:text-lg md:text-lg lg:text-base xl:text-lg 2xl:text-2xl"></FaStar>
+              </li>
+              <li className="text-blue-600">
+                <FaStar className="text-sm sm:text-lg md:text-lg lg:text-base xl:text-lg 2xl:text-2xl"></FaStar>
+              </li>
+              <li className="text-blue-600">
+                <FaStar className="text-sm sm:text-lg md:text-lg lg:text-base xl:text-lg 2xl:text-2xl"></FaStar>
+              </li>
+              <li className="text-yellow-600">
+                <FaStarHalfAlt className="text-sm sm:text-lg md:text-lg lg:text-base xl:text-lg 2xl:text-2xl"></FaStarHalfAlt>
+              </li>
+            </ul>
+            {/* ratting section end */}
+          </div>
+          {/* details section end */}
+        </div>
+
+      </Link>
+    </>
   );
 };
 

@@ -2,9 +2,9 @@
 import './Books.css'
 import { useNavigation } from 'react-router-dom';
 import LoadingPage from '../../LoadingPage/LoadingPage';
-// import AllBooks from '../AllBooks/AllBooks';
 import Banner from '../Banner/Banner';
 import TopBooks from '../TopBooks/TopBooks';
+import DreamBooks from '../DreamBooks/DreamBooks';
 
 const Books = () => {
 
@@ -17,9 +17,9 @@ const Books = () => {
       {/* banner section start */}
       <Banner></Banner>
       {/* banner section end */}
-      {/* allBooks section start */}
-      {/* <AllBooks></AllBooks> */}
-      {/* allBooks section end */}
+      {/* dreamBooks section start */}
+      <DreamBooks></DreamBooks>
+      {/* dreamBooks section end */}
       {/* topBooks section start */}
       <TopBooks></TopBooks>
       {/* topBooks section end */}
