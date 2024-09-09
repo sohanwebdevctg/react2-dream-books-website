@@ -15,9 +15,6 @@ const DreamBooks = () => {
       .then((data) => setBooks(data));
   }, []);
 
-
-  console.log(show)
-
   return (
     <div className="py-10">
       <div className="container mx-auto px-5">

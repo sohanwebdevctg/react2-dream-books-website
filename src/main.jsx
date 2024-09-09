@@ -10,6 +10,7 @@ import Books from './components/Books/Books/Books';
 import AboutUs from './components/AboutUs/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact/Contact';
 import AuthProvider from './components/Context/AuthProvider';
+import SingleBook from './components/Books/SingleBook/SingleBook';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path : '/books',
         element : <Books></Books>,
+      },
+      {
+        path : '/singleBook/:id',
+        element : <SingleBook></SingleBook>,
       },
       {
         path : '/aboutUs',

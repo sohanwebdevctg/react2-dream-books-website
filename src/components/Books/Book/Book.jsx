@@ -1,14 +1,25 @@
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 
 const Book = ({ book }) => {
-  const { id, image, name, rating } = book;
+  //params data
+  const { id, image, name } = book;
+
+  
+  //AOS
+  useEffect(() => {
+    AOS.init();
+  },[])
 
   return (
     <>
-      {/* <Link to={`/singleBook/${id}`}> */}
-      <Link to="#">
-        <div className="overflow-hidden h-40 w-full sm:h-48 md:h-44 lg:h-48 xl:h-64 2xl:h-72 relative hover:shadow-lg hover:shadow-blue-600/100 transform hover:-translate-y-2 easy-in duration-500">
+      <Link to={`/singleBook/${id}`} data-aos="fade-right" data-aos-duration="1000">
+        <div className="overflow-hidden h-40 w-full sm:h-48 md:h-44 lg:h-48 xl:h-64 2xl:h-72 relative hover:shadow-lg hover:shadow-blue-600/100 transform hover:-translate-y-2 easy-in duration-500" >
           {/* image section start */}
           <div className="w-full h-full">
             <img src={image} className="w-full h-full object-cover"></img>

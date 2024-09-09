@@ -2,7 +2,7 @@
   {
     "id": "66dc2085bf431b47a059dc66",
     "name": "The Bravest Fish",
-    "image": "./books/book1.jpeg",
+    "image": "https://i.ibb.co.com/3WzDLZ3/book1.jpg",
     "author": "Dr. Seuss",
     "publishedDate": "1960-01-01",
     "price": "$12.49",
@@ -13,7 +13,7 @@
   {
     "id": "66dc20852827423e16c8e927",
     "name": "Moral Story Book",
-    "image": "./books/book2.jpeg",
+    "image": "https://i.ibb.co.com/wMT81gd/book2.jpg",
     "author": "J.K. Rowling",
     "publishedDate": "2010-05-15",
     "price": "$14.29",
@@ -24,7 +24,7 @@
   {
     "id": "66dc20852e0f57452b4a961c",
     "name": "Jungle Book",
-    "image": "./books/book3.jpeg",
+    "image": "https://i.ibb.co.com/h9hQtdV/book3.jpg",
     "author": "Roald Dahl",
     "publishedDate": "1965-09-22",
     "price": "$11.99",
@@ -35,7 +35,7 @@
   {
     "id": "66dc20853fbec36976d045fd",
     "name": "Books of Magic",
-    "image": "./books/book4.jpeg",
+    "image": "https://i.ibb.co.com/drQ0ynK/book4.jpg",
     "author": "Maurice Sendak",
     "publishedDate": "1985-03-10",
     "price": "$12.09",
@@ -46,7 +46,7 @@
   {
     "id": "66dc20855a54f09dd4bbbd4b",
     "name": "I Found A Frog",
-    "image": "./books/book5.jpeg",
+    "image": "https://i.ibb.co.com/51grQN0/book5.jpg",
     "author": "A.A. Milne",
     "publishedDate": "1972-11-30",
     "price": "$10.09",
@@ -57,7 +57,7 @@
   {
     "id": "66dc2085acf3cb5551c43632",
     "name": "The Football Boy",
-    "image": "./books/book6.jpeg",
+    "image": "https://i.ibb.co.com/smYysnx/book6.jpg",
     "author": "Beatrix Potter",
     "publishedDate": "1990-07-12",
     "price": "$11.29",
@@ -68,7 +68,7 @@
   {
     "id": "66dc2085bf42af416e0bc527",
     "name": "The Fruffalo",
-    "image": "./books/book7.jpeg",
+    "image": "https://i.ibb.co.com/bdGf0Q4/book7.jpg",
     "author": "E.B. White",
     "publishedDate": "2001-02-21",
     "price": "$13.74",
@@ -79,7 +79,7 @@
   {
     "id": "66dc2085658bfc489b1b7563",
     "name": "101 Bedtime Stories",
-    "image": "./books/book8.jpeg",
+    "image": "https://i.ibb.co.com/LvV3szB/book8.jpg",
     "author": "Judy Blume",
     "publishedDate": "2008-06-17",
     "price": "$16.04",
@@ -90,7 +90,7 @@
   {
     "id": "66dc2085b5a409b8bf5cc078",
     "name": "The Robot",
-    "image": "./books/book9.jpeg",
+    "image": "https://i.ibb.co.com/L56StZ1/book9.jpg",
     "author": "C.S. Lewis",
     "publishedDate": "1988-10-09",
     "price": "$13.79",
@@ -101,7 +101,7 @@
   {
     "id": "66dc2085d49742bd1dfa7c7a",
     "name": "Cinderella",
-    "image": "./books/book10.jpeg",
+    "image": "https://i.ibb.co.com/MPnFRQw/book10.jpg",
     "author": "Lewis Carroll",
     "publishedDate": "1962-12-05",
     "price": "$11.39",
@@ -112,7 +112,7 @@
   {
     "id": "66dc20852062cf7e7ba577d2",
     "name": "The Hike",
-    "image": "./books/book11.jpeg",
+    "image": "https://i.ibb.co.com/Styj1Wt/book11.jpg",
     "author": "Laura Ingalls Wilder",
     "publishedDate": "1995-08-14",
     "price": "$11.54",
@@ -123,7 +123,7 @@
   {
     "id": "66dc20856598c37778b11e64",
     "name": "When Do Hippos Play",
-    "image": "./books/book12.jpeg",
+    "image": "https://i.ibb.co.com/t3NmcSd/book12.jpg",
     "author": "L.M. Montgomery",
     "publishedDate": "2005-01-20",
     "price": "$15.39",
@@ -134,7 +134,7 @@
   {
     "id": "66dc2085c5db14bc7353b210",
     "name": "Shockingly Good Stories",
-    "image": "./books/book13.jpeg",
+    "image": "https://i.ibb.co.com/3SDhVWf/book13.jpg",
     "author": "Astrid Lindgren",
     "publishedDate": "2012-04-10",
     "price": "$17.99",
@@ -145,7 +145,7 @@
   {
     "id": "66dc208564118c714b16638b",
     "name": "Inspiring Stories",
-    "image": "./books/book14.jpeg",
+    "image": "https://i.ibb.co.com/Dk32Dqd/book14.jpg",
     "author": "Shel Silverstein",
     "publishedDate": "2011-09-25",
     "price": "$14.74",
@@ -156,7 +156,7 @@
   {
     "id": "66dc2085cd79938d27576a41",
     "name": "The Little Fish",
-    "image": "./books/book15.jpeg",
+    "image": "https://i.ibb.co.com/WDrp5TY/book15.jpg",
     "author": "Eric Carle",
     "publishedDate": "1998-03-16",
     "price": "$10.34",
@@ -167,7 +167,7 @@
   {
     "id": "66dc2085102b29ed45821f36",
     "name": "Big Sky Mountain",
-    "image": "./books/book16.jpeg",
+    "image": "https://i.ibb.co.com/bgvZMPv/book16.jpg",
     "author": "Margaret Wise Brown",
     "publishedDate": "2003-07-11",
     "price": "$11.34",
@@ -178,7 +178,7 @@
   {
     "id": "66dc2085d13105e2aae62644",
     "name": "Sort Stories",
-    "image": "./books/book17.jpeg",
+    "image": "https://i.ibb.co.com/Nsg4fm5/book17.jpg",
     "author": "P.L. Travers",
     "publishedDate": "1999-06-20",
     "price": "$12.64",
@@ -189,7 +189,7 @@
   {
     "id": "66dc2085e9153fc4d73e51e3",
     "name": "Ninja",
-    "image": "./books/book18.jpeg",
+    "image": "https://i.ibb.co.com/2jsCFdm/book18.jpg",
     "author": "Kate DiCamillo",
     "publishedDate": "2007-08-05",
     "price": "$14.89",
@@ -200,7 +200,7 @@
   {
     "id": "66dc2218c5775001c4944358",
     "name": "365 Adventure Stories",
-    "image": "./books/book19.jpeg",
+    "image": "https://i.ibb.co.com/dWjCWwC/book19.jpg",
     "author": "Jacqueline Wilson",
     "publishedDate": "2015-10-18",
     "price": "$19.84",
@@ -211,7 +211,7 @@
   {
     "id": "66dc22180c4b659e34401c0a",
     "name": "Children Story Book",
-    "image": "./books/book20.jpeg",
+    "image": "https://i.ibb.co.com/VjZV39x/book20.jpg",
     "author": "Stan and Jan Berenstain",
     "publishedDate": "2002-11-11",
     "price": "$13.29",
@@ -222,7 +222,7 @@
   {
     "id": "66dc221866b400e9c8410948",
     "name": "Bed Time Stories",
-    "image": "./books/book21.jpeg",
+    "image": "https://i.ibb.co.com/Hg3b71B/book21.jpg",
     "author": "William Steig",
     "publishedDate": "2016-03-23",
     "price": "$14.09",
@@ -233,7 +233,7 @@
   {
     "id": "66dc2218e742e1ad64372951",
     "name": "The Lost Bee",
-    "image": "./books/book22.jpeg",
+    "image": "https://i.ibb.co.com/1vGczfp/book22.jpg",
     "author": "Tomie dePaola",
     "publishedDate": "2019-05-02",
     "price": "$12.99",
@@ -244,7 +244,7 @@
   {
     "id": "66dc221890c11aa6f1a5c647",
     "name": "11 Best Idea",
-    "image": "./books/book23.jpeg",
+    "image": "https://i.ibb.co.com/wQd9QnK/book23.jpg",
     "author": "Chris Van Allsburg",
     "publishedDate": "2020-06-15",
     "price": "$15.49",
@@ -255,7 +255,7 @@
   {
     "id": "66dc22188a2c385cb84f34b3",
     "name": "Bible Story",
-    "image": "./books/book24.jpeg",
+    "image": "https://i.ibb.co.com/649dVhs/book24.jpg",
     "author": "Jean de Brunhoff",
     "publishedDate": "2018-09-28",
     "price": "$13.59",
@@ -266,7 +266,7 @@
   {
     "id": "66dc2218074ecfff52f0e402",
     "name": "The Giraffe",
-    "image": "./books/book25.jpeg",
+    "image": "https://i.ibb.co.com/pjGqbKm/book25.jpg",
     "author": "Tove Jansson",
     "publishedDate": "2006-04-12",
     "price": "$12.49",
@@ -277,7 +277,7 @@
   {
     "id": "66dc2218fc5094169a37da2a",
     "name": "Red Riding Hood",
-    "image": "./books/book26.jpeg",
+    "image": "https://i.ibb.co.com/bFxFTF9/book26.jpg",
     "author": "R.L. Stine",
     "publishedDate": "2004-12-05",
     "price": "$11.89",
@@ -288,7 +288,7 @@
   {
     "id": "66dc2218f9a2b151d4291f28",
     "name": "The Sleepover",
-    "image": "./books/book27.jpeg",
+    "image": "https://i.ibb.co.com/zNFpPML/book27.jpg",
     "author": "Maurice Sendak",
     "publishedDate": "2009-08-20",
     "price": "$13.09",
@@ -299,7 +299,7 @@
   {
     "id": "66dc221849377939e967358d",
     "name": "Monkey & Crocodile",
-    "image": "./books/book28.jpeg",
+    "image": "https://i.ibb.co.com/9WXWWNz/book28.jpg",
     "author": "Jon Scieszka",
     "publishedDate": "2017-11-14",
     "price": "$12.89",
@@ -310,7 +310,7 @@
   {
     "id": "66dc221806e3a454eb03366d",
     "name": "Bedtime Stories",
-    "image": "./books/book29.jpeg",
+    "image": "https://i.ibb.co.com/VC5wV16/book29.jpg",
     "author": "Dav Pilkey",
     "publishedDate": "2021-10-22",
     "price": "$16.29",
@@ -321,7 +321,7 @@
   {
     "id": "66dc22186fdcaa1b6abc061f",
     "name": "Pinocchio",
-    "image": "./books/book30.jpeg",
+    "image": "https://i.ibb.co.com/m9MFZZQ/book30.jpg",
     "author": "Roald Dahl",
     "publishedDate": "1993-02-15",
     "price": "$13.89",
