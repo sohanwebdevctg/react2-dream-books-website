@@ -1,8 +1,9 @@
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigation } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import LoadingPage from "../../LoadingPage/LoadingPage";
 
 
 
@@ -15,6 +16,12 @@ const Book = ({ book }) => {
   useEffect(() => {
     AOS.init();
   },[])
+
+    // loading page
+    const navigation = useNavigation();
+    {
+      navigation.state === "loading" ? <LoadingPage></LoadingPage> : "";
+    }
 
   return (
     <>
