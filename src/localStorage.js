@@ -10,7 +10,8 @@ const getLocalStorage = () => {
 const setItem = (id) => {
 
   let cart = getLocalStorage();
-  cart.push({'id' : id});
+  // cart.push({'id' : id});
+  cart.push(id);
   const setCartData = JSON.stringify(cart);
   localStorage.setItem('cart', setCartData);
 
