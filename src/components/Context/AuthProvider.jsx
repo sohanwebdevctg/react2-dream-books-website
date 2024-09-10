@@ -10,18 +10,11 @@ export const AuthContext = createContext(null)
 const AuthProvider = ({children}) => {
 
   //card
-  const [card, setCard] = useState([])
+  const [card, setCard] = useState([]);
 
-  // color
-  const [color, setColor] = useState(false)
-
-  // toggle color
-  const toggleColor = () => {
-    setColor(!color)
-  }
 
   // user info
-  const info = {card,color, setColor,toggleColor, setCard}
+  const info = {card, setCard}
 
   return (
     <AuthContext.Provider value={info}>

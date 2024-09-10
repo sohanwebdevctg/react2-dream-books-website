@@ -2,6 +2,9 @@ import { ArrowLeftOnRectangleIcon } from "@heroicons/react/20/solid";
 import { useEffect, useState } from "react";
 import { useNavigate, useNavigation, useParams } from "react-router-dom";
 import LoadingPage from "../../LoadingPage/LoadingPage";
+import { setItem } from "../../../localStorage";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const SingleBook = () => {
@@ -36,7 +39,17 @@ const SingleBook = () => {
 
   //buyBtn id in local storage
   const buyBtn = (id) => {
-    console.log(id);
+    // setLocalStorage id
+    setItem(id);
+
+    //notify
+    toast("Your data added");
+
+    //change route to cart route
+    navigate('/cart');
+
+  
+    
   }
 
 
@@ -64,10 +77,10 @@ const SingleBook = () => {
                 <strong className="text-white">Rating :</strong><span className="text-gray-500"> {books.rating}</span>
               </li>
               <li className="text-xs sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl">
-                <strong className="text-white">Price :</strong> <del className="text-gray-500"> {books.price}</del>
+                <strong className="text-white">Price :</strong> <del className="text-gray-500"> ${books.price}</del>
               </li>
               <li className="text-xs sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl">
-                <strong className="text-white">Discount :</strong><span className="text-gray-500"> {books.discount}</span>
+                <strong className="text-white">Discount :</strong><span className="text-gray-500"> ${books.discount}</span>
               </li>
               <li className="w-full xl:w-[95%]">
                 <strong className="text-white text-xs sm:text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl">Details :</strong><span className="text-yellow-500 text-xs sm:text-xs ms:text-xs lg:text-base xl:text-lg 2xl:text-xl"> {books.details}</span>
@@ -84,6 +97,7 @@ const SingleBook = () => {
           {/* description section end */}
         </div>
         {/* content section end */}
+        <ToastContainer />
       </div>
     </div>
   );
