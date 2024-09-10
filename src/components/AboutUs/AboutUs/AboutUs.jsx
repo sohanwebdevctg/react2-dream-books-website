@@ -5,6 +5,7 @@ import Features from "../Features/Features";
 import Offer from "../Offer/Offer";
 import OurReader from "../OurReader/OurReader";
 import LoadingPage from "../../LoadingPage/LoadingPage";
+import Title from "../../Title/Title";
 
 
 
@@ -15,6 +16,9 @@ const AboutUs = () => {
 
   return (
     <div>
+      {/* title section start */}
+      <Title title={'AboutUs'}></Title>
+      {/* title section end */}
       {/* banner section start */}
       <Banner></Banner>
       {/* banner section end */}

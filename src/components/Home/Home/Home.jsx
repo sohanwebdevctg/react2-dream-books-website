@@ -9,6 +9,7 @@ import OurApp from "../OurApp/OurApp";
 import NewArrivals from "../NewArrivals/NewArrivals";
 import Purchase from "../Purchase/Purchase";
 import FavoriteBooks from "../FavoriteBooks/FavoriteBooks";
+import Title from "../../Title/Title";
 
 const Home = () => {
   const navigation = useNavigation();
@@ -18,6 +19,9 @@ const Home = () => {
 
   return (
     <div>
+      {/* title section start */}
+      <Title title={'Home'}></Title>
+      {/* title section end */}
       {/* banner section start */}
       <Banner></Banner>
       {/* banner section end */}

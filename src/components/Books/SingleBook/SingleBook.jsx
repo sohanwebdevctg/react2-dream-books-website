@@ -36,7 +36,7 @@ const SingleBook = () => {
 
   //buyBtn id in local storage
   const buyBtn = (id) => {
-    console.log(id)
+    console.log(id);
   }
 
 

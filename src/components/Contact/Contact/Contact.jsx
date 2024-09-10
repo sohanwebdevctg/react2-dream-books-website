@@ -3,6 +3,7 @@ import LoadingPage from "../../LoadingPage/LoadingPage";
 import Banner from "../Banner/Banner";
 import ContactForm from "../ContactForm/ContactForm";
 import Location from "../Location/Location";
+import Title from "../../Title/Title";
 
 
 const Contact = () => {
@@ -12,6 +13,9 @@ const Contact = () => {
 
   return (
     <div>
+      {/* title section start */}
+      <Title title={'Contact'}></Title>
+      {/* title section end */}
       {/* banner section start */}
       <Banner></Banner>
       {/* banner section end */}
