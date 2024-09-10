@@ -12,6 +12,7 @@ import Contact from './components/Contact/Contact/Contact';
 import AuthProvider from './components/Context/AuthProvider';
 import SingleBook from './components/Books/SingleBook/SingleBook';
 import { HelmetProvider } from 'react-helmet-async';
+import Cart from './components/Cart/Cart';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path : '/contact',
         element : <Contact></Contact>
+      },
+      {
+        path : '/cart',
+        element : <Cart></Cart>
       }
     ]
   }
