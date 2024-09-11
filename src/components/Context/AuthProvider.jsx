@@ -36,9 +36,7 @@ const AuthProvider = ({children}) => {
       }
       setCart(saveCard)
     }
-  },[card])
-
-  console.log(cart)
+  },[card]);
   
 
   // user info
