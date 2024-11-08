@@ -5,6 +5,7 @@ import LoadingPage from "../../LoadingPage/LoadingPage";
 import { getData, setData} from "../../../localStorage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Title from "../../Title/Title";
 
 
 const SingleBook = () => {
@@ -66,8 +67,13 @@ const SingleBook = () => {
     return <LoadingPage></LoadingPage>
   }
 
+
   return (
-    <div className="py-10 h-full">
+    <>
+                {/* title section start */}
+                <Title title={`${books?.name}`}></Title>
+            {/* title section end */}
+        <div className="py-10 h-full">
       <div className="container mx-auto h-full flex items-center p-3">
         {/* content section start */}
         <div className="sm:flex sm:justify-between sm:items-center p-5 h-full w-full border-2 border-blue-600 bg-black bg-opacity-30">
@@ -112,6 +118,7 @@ const SingleBook = () => {
         <ToastContainer />
       </div>
     </div>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { deleteSingleData,deleteAllData, getData } from "../../localStorage";
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
+import Title from "../Title/Title";
 
 
 const Cart = () => {
@@ -53,7 +54,9 @@ const sum = cart.reduce((accumulator, currentValue) => accumulator + currentValu
 
   return (
     <>
-    
+          {/* title section start */}
+          <Title title={'Cart-Table'}></Title>
+      {/* title section end */}
     <div className="h-full flex items-center px-5">
       <div className="container mx-auto py-2 sm:px-3 lg:p-10">
       <div className="flex justify-between items-center px-2 py-3">
