@@ -1,13 +1,11 @@
-import { useContext } from "react";
-import { AuthContext } from './../Context/AuthProvider';
+
 
 const Cart = () => {
 
-  // cart data
-  const {cart} = useContext(AuthContext);
 
-  
-const sum = cart.reduce((accumulator, currentValue) => accumulator + currentValue.discount,0);
+
+  const cart = null;
+// const sum = cart.reduce((accumulator, currentValue) => accumulator + currentValue.discount,0);
 
 
   return (
@@ -16,13 +14,13 @@ const sum = cart.reduce((accumulator, currentValue) => accumulator + currentValu
       <div className="flex justify-between items-center px-2 py-3">
         <ul className="flex gap-1 items-center py-3 pl-2 text-blue-600 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
           <li className="font-bold">Total : </li>
-          <li className="font-bold"> ${sum ? sum : '00'}</li>
+          {/* <li className="font-bold"> ${sum ? sum : '00'}</li> */}
         </ul>
         <button className="btn btn-warning btn-xs lg:btn-sm 2xl:btn-md">DeleteAll</button>
       </div>
       <div className="overflow-x-auto">
         {
-          cart.length > 0 ? (<table className="table">
+          cart?.length > 0 ? (<table className="table">
             {/* head */}
             <thead>
               <tr className="text-yellow-500">

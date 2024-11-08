@@ -1,20 +1,19 @@
-const getLocalStorage = () => {
-  let cart = [];
-  const localStorageData = localStorage.getItem('cart');
-  if(localStorageData){
-    cart = JSON.parse(localStorageData)
-  }
-  return cart;
+
+
+/* local storage data start */
+const getData = () => {
+  const data = JSON.parse(localStorage.getItem('cart')) || [];
+  return data;
 }
 
-const setItem = (id) => {
+const setData = (cartData) => {
 
-  let cart = getLocalStorage();
-  // cart.push({'id' : id});
-  cart.push(id);
-  const setCartData = JSON.stringify(cart);
-  localStorage.setItem('cart', setCartData);
+  const getPreviousData = getData();
+  getPreviousData.push(cartData)
 
+  localStorage.setItem('cart', JSON.stringify(getPreviousData))
 }
 
-export {getLocalStorage, setItem}
+
+/* local storage data start */
+export {getData, setData}

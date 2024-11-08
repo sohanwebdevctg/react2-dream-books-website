@@ -1,10 +1,9 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BoltIcon } from "@heroicons/react/24/solid";
 import { FaCartPlus } from "react-icons/fa";
-import { AuthContext } from "../Context/AuthProvider";
 
 const Navbar = () => {
   // toggle button state
@@ -29,8 +28,6 @@ const Navbar = () => {
     };
   }, []);
 
-// cart data
-  const {cart} = useContext(AuthContext);
 
   return (
     <div>
@@ -108,7 +105,7 @@ const Navbar = () => {
                 <FaCartPlus 
               className="text-yellow-500 sm:text-[11px] md:text-[13px] lg:text-base xl:text-xl cursor-pointer "
             ></FaCartPlus>
-            <sup className="text-white absolute -top-2 -right-1">{cart.length}</sup>
+            <sup className="text-white absolute -top-2 -right-1">1</sup>
                 </NavLink>
                 {/* cart button end */}
               </li>
@@ -143,7 +140,7 @@ const Navbar = () => {
             <FaCartPlus
               className="text-yellow-500 text-base cursor-pointer"
             ></FaCartPlus>
-            <sup className="text-white absolute -top-4 -right-1 text-xs">{cart.length}</sup>
+            <sup className="text-white absolute -top-4 -right-1 text-xs">1</sup>
             </NavLink>
             {/* cart button end */}
             {show ? (

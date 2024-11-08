@@ -9,7 +9,6 @@ import Home from './components/Home/Home/Home';
 import Books from './components/Books/Books/Books';
 import AboutUs from './components/AboutUs/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact/Contact';
-import AuthProvider from './components/Context/AuthProvider';
 import SingleBook from './components/Books/SingleBook/SingleBook';
 import { HelmetProvider } from 'react-helmet-async';
 import Cart from './components/Cart/Cart';
@@ -50,10 +49,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthProvider>
     <HelmetProvider>
       <RouterProvider router={router}></RouterProvider>
       </HelmetProvider>
-    </AuthProvider>
   </React.StrictMode>,
 )
