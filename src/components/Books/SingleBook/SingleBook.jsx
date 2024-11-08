@@ -53,13 +53,11 @@ const SingleBook = () => {
 
     if(findData){
       toast("Sorry, Your data has been saved");
-      location.reload();
     }else{
     // setLocalStorage
     setData(book)
     //notify
     toast("Your data added");
-    location.reload();
     }
   }
 
