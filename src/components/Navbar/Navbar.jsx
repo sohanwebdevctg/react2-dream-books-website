@@ -4,8 +4,14 @@ import { IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BoltIcon } from "@heroicons/react/24/solid";
 import { FaCartPlus } from "react-icons/fa";
+import { getData } from "../../localStorage";
 
 const Navbar = () => {
+
+  const [cart, setCart] = useState(() => getData());
+
+  console.log(cart)
+
   // toggle button state
   const [show, setShow] = useState(false);
 
@@ -99,16 +105,18 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </li>
-              <li>
+              {
+                cart.length > 0 && <li>
                 {/* cart button start */}
                 <NavLink to="/cart" className="relative">
                 <FaCartPlus 
               className="text-yellow-500 sm:text-[11px] md:text-[13px] lg:text-base xl:text-xl cursor-pointer "
             ></FaCartPlus>
-            <sup className="text-white absolute -top-2 -right-1">1</sup>
+            <sup className="text-white absolute -top-2 -right-1">{cart.length}</sup>
                 </NavLink>
                 {/* cart button end */}
               </li>
+              }
             </ul>
             {/* link end */}
           </div>
@@ -136,12 +144,14 @@ const Navbar = () => {
           {/* button section start */}
           <div className="flex items-center gap-3">
             {/* cart button start */}
-            <NavLink to="/cart" className="relative">
-            <FaCartPlus
-              className="text-yellow-500 text-base cursor-pointer"
-            ></FaCartPlus>
-            <sup className="text-white absolute -top-4 -right-1 text-xs">1</sup>
-            </NavLink>
+            {
+              cart.length > 0 && <NavLink to="/cart" className="relative">
+              <FaCartPlus
+                className="text-yellow-500 text-base cursor-pointer"
+              ></FaCartPlus>
+              <sup className="text-white absolute -top-4 -right-1 text-xs">{cart.length}</sup>
+              </NavLink>
+            }
             {/* cart button end */}
             {show ? (
               <button

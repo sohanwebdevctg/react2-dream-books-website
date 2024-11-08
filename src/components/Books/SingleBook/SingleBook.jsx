@@ -58,6 +58,7 @@ const SingleBook = () => {
     setData(book)
     //notify
     toast("Your data added");
+    location.reload();
     }
   }
 

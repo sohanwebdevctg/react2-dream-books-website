@@ -41,6 +41,7 @@ const sum = cart.reduce((accumulator, currentValue) => accumulator + currentValu
     // checked user
     if(email === null && accountNumber === null && totalItem === null && totalPrice === null){
       toast("your data is invalid");
+      navigate('/cart');
     }else{
       deleteAllData();
       toast("successfully purchased");
@@ -53,7 +54,7 @@ const sum = cart.reduce((accumulator, currentValue) => accumulator + currentValu
   return (
     <>
     
-    <div className="h-full flex items-center">
+    <div className="h-full flex items-center px-5">
       <div className="container mx-auto py-2 sm:px-3 lg:p-10">
       <div className="flex justify-between items-center px-2 py-3">
         <ul className="flex gap-1 items-center py-3 pl-2 text-blue-600 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
@@ -103,7 +104,7 @@ const sum = cart.reduce((accumulator, currentValue) => accumulator + currentValu
       </div>
       {/* table end */}
 {/* buy start */}
-<div className="card bg-blue-600 w-full shadow-2xl mt-10 sm:w-11/12  md:w-10/12 lg:w-8/12 mx-auto">
+<div className="card bg-blue-600 w-full shadow-2xl my-10 sm:w-11/12  md:w-10/12 lg:w-8/12 mx-auto">
             <form onSubmit={buyData} className="card-body w-full">
               <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-3 sm:gap-5 ">
                 {/* left start */}
