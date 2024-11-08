@@ -8,9 +8,9 @@ import { getData } from "../../localStorage";
 
 const Navbar = () => {
 
+  // loading data
   const [cart, setCart] = useState(() => getData());
 
-  console.log(cart)
 
   // toggle button state
   const [show, setShow] = useState(false);
@@ -19,19 +19,15 @@ const Navbar = () => {
   const [scrollData, setScrollData] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 150) {
-        setScrollData(true);
-      } else {
-        setScrollData(false);
+
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 50){
+        setScrollData(true)
+      }else{
+        setScrollData(false)
       }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    });
+    
   }, []);
 
 
@@ -41,9 +37,9 @@ const Navbar = () => {
       <div
         className={` ${
           scrollData
-            ? "fixed top-0 right-0 left-0 z-10"
-            : "sticky top-0 right-0 left-0 z-0 "
-        } hidden sm:block w-full h-16 lg:h-20 2xl:h-24 bg-[#17181B] duration-500 shadow-sm shadow-blue-600`}
+            ? "fixed top-0 right-0 left-0 z-10 duration-500 ease-in"
+            : "sticky duration-500 ease-in"
+        } hidden sm:block w-full h-16 lg:h-20 2xl:h-24 shadow-sm shadow-blue-600 bg-[#17181B] `}
       >
         <div className="container mx-auto px-5">
           <div className="flex justify-between h-16 lg:h-20 2xl:h-24 items-center px-4">
@@ -126,7 +122,7 @@ const Navbar = () => {
       {/* mobile section start */}
       <div
         className={`${
-          scrollData ? "fixed top-0 right-0 left-0 z-10" : "sticky z-10"
+          scrollData ? "fixed top-0 right-0 left-0 z-20" : "sticky z-10"
         } sm:hidden h-16 bg-[#17181B] duration-500 shadow-sm shadow-blue-600`}
       >
         {/* title section start */}
@@ -180,10 +176,10 @@ const Navbar = () => {
         <div
           className={`absolute ${
             show ? "right-0 z-50" : "right-[1000px]"
-          } z-50 bg-[#17181B] w-full duration-700 h-screen bg-opacity-95`}
+          } z-50 bg-[#17181B] w-full duration-700 h-screen bg-opacity-95 mt-1`}
         >
           {/* link section start */}
-          <ul className="md:flex gap-5 text-center space-y-5">
+          <ul className="md:flex flex-col justify-center gap-5 text-center space-y-5 h-full">
             <li className="my-2">
               <NavLink
                 to="/"
