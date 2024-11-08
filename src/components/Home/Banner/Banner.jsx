@@ -6,7 +6,6 @@ import { useEffect } from "react";
 
 const Banner = () => {
 
-  
   //AOS
   useEffect(() => {
     AOS.init();

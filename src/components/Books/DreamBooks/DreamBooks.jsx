@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Book from "../Book/Book";
+import LoadingPage from "../../LoadingPage/LoadingPage";
 
 const DreamBooks = () => {
   //get data
@@ -8,12 +9,23 @@ const DreamBooks = () => {
   //button toggle
   const [show, setShow] = useState(false);
 
+  //loading
+  const [load, setLoad] = useState(false)
+
   // fetch data
   useEffect(() => {
+    setLoad(true);
     fetch("dreamBooks.json")
       .then((res) => res.json())
-      .then((data) => setBooks(data));
+      .then((data) => {
+        setBooks(data)
+        setLoad(false)
+      });
   }, []);
+
+  if(load){
+    return <LoadingPage></LoadingPage>
+  }
 
   return (
     <div className="py-10">
@@ -29,7 +41,7 @@ const DreamBooks = () => {
         {/* title section start */}
         {/* books section start */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4 md:gap-4 lg:gap-4 xl:gap-5 2xl:gap-6 mt-10">
-          {books.slice(0,show ? 30 : 20).map((book) => (
+          {books.slice(0,show ? books.length : 15).map((book) => (
             <Book key={book.id} book={book}></Book>
           ))}
         </div>
